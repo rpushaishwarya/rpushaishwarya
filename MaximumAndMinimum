@@ -1,0 +1,30 @@
+package week4.day2;
+
+
+
+public class MaximumAndMinimum {
+	public static void main(String[] args) {
+		int[] array= {1000,2,3,100,4,5,6,78};
+		
+		int max=Integer.MAX_VALUE;
+		System.out.println(max);
+		
+		for (int i = 0; i < array.length; i++) {
+			if(max>array[i]) {
+				max=array[i];
+			}
+		}
+		System.out.println("Min Value"+max);
+		
+		int minValue = Integer.MIN_VALUE;
+		for (int i = 0; i < array.length; i++) {
+			if(minValue<array[i]) {
+				minValue=array[i];
+			}
+		}
+		
+		System.out.println("Max Value"+minValue);
+		
+
+}
+}
