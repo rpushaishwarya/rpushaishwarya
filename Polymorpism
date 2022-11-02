@@ -1,0 +1,28 @@
+package week4.day3;
+
+public class MethodOverloding {
+	public void getEmployeeId(int id) {
+		System.out.println(id);
+	}
+	public void getEmployeeName(String name) {
+		System.out.println(name);
+	}
+	public void getEmployeeSalary(double salary) {
+		System.out.println(salary);
+	}
+	public void getEmployeePhone(int no) {
+		System.out.println(no);
+	}
+	public void getEmployeeAddress(String adds) {
+		System.out.println(adds);
+	}
+	public static void main(String[] args) {
+		MethodOverloding emp=new MethodOverloding();
+		emp.getEmployeeAddress("no,7 anthaman iland");
+		emp.getEmployeeId(1003);
+		emp.getEmployeeName("JackSparrow");
+		emp.getEmployeePhone(1234567894);
+		emp.getEmployeeSalary(2000.0);
+	}
+
+}
